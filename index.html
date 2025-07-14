@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto nlw</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <img src="./assets/logo.png" alt="Logo esportes nlw">
+   </header> 
+   <main>
+    <section>
+        <div>
+            <h2 class="title">Assistente de Meta</h2>
+            <p>Pergunte sobre estrategias,builds e dicas para seu jogo</p>
+        <form id="form">
+            <input type="password" placeholder="Informe a Apikey do Gemini" 
+            required id="Apikey">
+        <select id=game>
+        <option value="">Selecione um jogo</option>
+        <option value="Valorant">Valorant</option>
+        <option value="Lol">League of legends</option>
+        <option value="Csgo">CS:GO</option>
+        </select>
+        <input id="question" type="text" placeholder="Melhor build para ADC...">
+        <button id="askButton">
+             Perguntar
+            </button>
+        </form>
+        <div id="Airesponse" class="hider">
+            <div class="response-content">
+
+            </div>
+        </div>
+        </div>
+    </section>
+   </main>
+   <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
